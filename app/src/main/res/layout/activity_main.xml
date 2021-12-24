@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android QR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/create_qr"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_light_background"
+        android:padding="10dp"
+        android:text="Create QR Code"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/scan_qr"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_qr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_light_background"
+        android:padding="10dp"
+        android:text="Scan QR Code"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/bonus"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scan_qr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_light_background"
+        android:padding="10dp"
+        android:text="Bonus"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/printer_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bonus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="printer ID" />
+
+    <Button
+        android:id="@+id/print_logo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/printer_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_light_background"
+        android:padding="10dp"
+        android:text="Print Logo"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/print_logo"
+        android:src="@drawable/logo_zainsoft"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+</RelativeLayout>
